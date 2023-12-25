@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -35,7 +36,7 @@
             android:layout_height="25dp"
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
-            android:indeterminateTint="@color/colorPrimary"
+            android:indeterminateTint="@color/white"
             android:visibility="gone"/>
 
 
@@ -47,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Search"
-        android:textColor="#2196F3"
+        android:textColor="#8BC34A"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -57,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="TextView"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold" />
 
