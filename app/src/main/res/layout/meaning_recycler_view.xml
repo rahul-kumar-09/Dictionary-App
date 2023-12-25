@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded_corner">
+
+
+    <TextView
+        android:id="@+id/part_of_speech_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="noun"
+        android:textColor="#009688"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="definition: "
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/definition_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="definition \n\n another \n\n third" />
+
+
+    <TextView
+        android:id="@+id/synonyms_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Synonyms: "
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/synonyms_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="definition , another , third" />
+
+
+    <TextView
+        android:id="@+id/antonyms_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Antonysm: "
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/antonyms_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="definition , another , third" />
+
+</LinearLayout>
