@@ -1,11 +1,13 @@
 package com.programmingz.mydictionary
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.snackbar.Snackbar
 import com.programmingz.mydictionary.databinding.ActivityMainBinding
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -50,8 +52,9 @@ class MainActivity : AppCompatActivity() {
             } catch (e: Exception) {
                 runOnUiThread {
                     setInProgress(false)
-                    Toast.makeText(applicationContext, "Something went wrong", Toast.LENGTH_SHORT)
-                        .show()
+                   val snackbar = Snackbar.make(findViewById(android.R.id.content), "Something went wrong", Snackbar.LENGTH_LONG).setAction("Action", null)
+                    snackbar.setActionTextColor(Color.WHITE)
+                    snackbar.show()
                 }
             }
         }
